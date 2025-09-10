@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock in HTML,CSS and js</title>
+    <link rel="stylesheet" href="clock.css">
+    <scipt src="clock.js"></scipt>
+    <style>
+      *{
+    margin:0px;
+    padding:0px
+}
+body{
+    font-family:'poppins',sans-serif;
+    background:rgb(238,174,202);
+    background:radial-gradient(circle, rgb(238,174,202,1) 0% ,rgba(148,187,233,1) 100%);
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.clock{
+    background-color:rgb(49,47,47);
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    color:#fff;
+    border:5px solid #fff;
+    box-shadow:0px 0px 10px rgba(255,255,255,0.7),
+    0px 0px 20px rgba(0,0,0,0.7);
+    font-size:26px;
+    font-weight:bold;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+
+}
+.clock ul li{
+    list-style:none;
+    position:absolute;
+    text-align:center;
+    transform:rotate(calc(30deg * var(--i)));
+    inset:10px;
+}
+.clock ul li span{
+    transform:rotate(calc(-30deg * var(--i)));
+    display:inline-block;
+}
+.clock:after{
+    content: '';
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border-radius:50%;
+    position:absolute
+}
+.needle{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.needle span{
+    width:5px;
+    height:70px;
+    background-color: var(--clr);
+    position:absolute;
+    border-radius:8px;
+}
+    </style>
+
+    
+</head>
+<body>
+    <!--html-->
+    <div class="clock">
+      <div class="needle" id="hr" style="--clr:#ff3d58"><span></span></div>
+      <div class="needle" id="min" style="--clr:#00a6ff"><span></span></div>
+      <div class="needle" id="sec" style="--clr:#ffffff"><span></span></div>
+
+      <ul>
+        <li style="--i:1"><span>1</span></li>
+        <li style="--i:2"><span>2</span></li>
+        <li style="--i:3"><span>3</span></li>
+        <li style="--i:4"><span>4</span></li>
+        <li style="--i:5"><span>5</span></li>
+        <li style="--i:6"><span>6</span></li>
+        <li style="--i:7"><span>7</span></li>
+        <li style="--i:8"><span>8</span></li>
+        <li style="--i:9"><span>9</span></li>
+        <li style="--i:10"><span>10</span></li>
+        <li style="--i:11"><span>11</span></li>
+        <li style="--i:12"><span>12</span></li>
+      </ul>
+    </div>
+
+
+
+
+    <script>
+      let hr = document.getElementById('hr');
+let min = document.getElementById('min');
+let sec = document.getElementById('sec');
+ 
+function displayTime(){
+let date = new Date();
+
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+
+let hRotation = 30*hh + mm/2;
+let mRotation = 6*mm;
+let sRotation = 6*ss;
+
+hr.style.transform = `rotate(${hRotation}deg)`;
+min.style.transform = `rotate(${mRotation}deg)`;
+sec.style.transform = `rotate(${sRotation}deg)`;
+
+}
+setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

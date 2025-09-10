@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #logo{
+            width:15%;
+            border-radius:5px;
+            margin:45px;
+            background-color:aqua;
+        }
+        input{
+            height:60px;
+            width:200px;
+            background-color:black;
+            color:aliceblue;
+        }
+        button{
+            height:50px;
+            width:45px;
+            border-radius:7px;
+            background-color: black;
+            margin:1px;
+            padding:1px;
+            color:aliceblue;
+        }
+        .operator{
+            background-color:orangered;
+        }
+        .jas{
+            background-color:white;
+            color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div id="logo">
+            <input placeholder="0" id="inputBox" readonly>
+            <br>
+            <button onclick="clearDisplay()" class="jas">C</button>
+            <button onclick="appendToDisplay('D')" class="jas">D</button>
+            <button onclick="appendToDisplay('%')" class="jas">%</button>
+            <button onclick="appendToDisplay('/')" class="jas">/</button>
+            <br>
+            <button onclick="appendToDisplay('7')"> 7 </button>
+            <button onclick="appendToDisplay('8')"> 8 </button>
+            <button onclick="appendToDisplay('9')"> 9 </button>
+            <button onclick="appendToDisplay('*')" class="jas">*</button>
+            <br>
+            <button onclick="appendToDisplay('4')" > 4 </button>
+            <button onclick="appendToDisplay('5')" > 5 </button>
+            <button onclick="appendToDisplay('6')" > 6 </button>
+            <button onclick="appendToDisplay('-')" class="jas">-</button>
+            <br>         
+            <button onclick="appendToDisplay('1')"> 1 </button>
+            <button onclick="appendToDisplay('2')"> 2 </button>
+            <button onclick="appendToDisplay('3')"> 3 </button>
+            <button onclick="appendToDisplay('+')" class="jas">+</button>
+            <br>
+           <button onclick="appendToDisplay('00')"> 00 </button>
+            <button onclick="appendToDisplay('0')"> 0 </button>
+            <button onclick="appendToDisplay('.')"> . </button>
+            <button onclick="calculate()"class="operator">=</button>
+            <br>
+
+        </div>
+    </div>
+</center>
+<script>
+    let display= document.getElementById('inputBox');
+
+    function appendToDisplay(input){
+    display.value += input;
+    }
+
+    function clearDisplay(){
+        display.value = "";
+    }
+
+    function calculate(){
+        try{
+        display.value = eval(display.value);
+        }
+        catch(error){
+            display.value = "Error";
+        }
+    }
+    </script>
+</body>
+</html>

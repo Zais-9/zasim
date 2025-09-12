@@ -23,10 +23,9 @@
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#contact" onclick=touch() >Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
 </header>
-        
     <div class="home-content">
             <h1>Hi, It's <span>Jaseem</span></h1>
            <h3 class="text-animation">I am a <span></span> </h3>

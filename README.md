@@ -59,44 +59,17 @@
          <div class="about-content">
                         <div class="home-image">
                     
-                    
-                    
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>About Page</title>
-                <link  rel="stylesheet" href="home.css"/>
-        </head>
-        <body>
-            
-        
-          </div>
-         </section>
-</body>
-</html>
-
-
-
-
-
-
-
-            
         <section class="about" id="about">
             <div class="about-img">
                 <img src="pic2.jpg" alt="">
             </div>
-
              <div class="about-content">
                     <h2 class="heading">About <span>Me</span></h2>
                     <h3 class="text-animation">
                         <span></span>
-                    </h3>
-                
+                    </h3>                
                 <p><b>Here's an example of "About Me": </b>
                     <br>
-         
                          "I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiments when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country's peace, I like metropolis' noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign.
                          
                          I always wanted to be a great writer, like Victor Hugo who wrote "Les Miserable", or like Roman Roland who wrote "John Christopher". They have influenced millions of people through their books. I also wanted to be a great psychologist, like William James or Sigmund Freud, who could read people's mind. Of course, I am nowhere close to these people, yet. I am just someone who does some teaching, some research, and some writing. But my dream is still alive.
@@ -238,12 +211,6 @@
                 </section>
 
 
-
-
-
-
-                
-             
     <footer class="footer">
         <div class="social">
             <a href="https://github.com/Zais-9">
@@ -260,7 +227,6 @@
                 <i class="bx bxl-instagram-alt"></i>
             </a>
         </div>
-
              <nav class="navbar" class="list">
                 <ul class="list">
               <li><a href="#Home">FAQ</a></li>
@@ -270,14 +236,11 @@
               <li><a href="Contact.html">Contact</a></li>
             </ul>
              </nav>
-
-
         <p class="copyright">
             mdjaseema40@gmail.com | All Rights Reserved-2024 <br>
             <a href="6289172829" class="number" phone>6289172829</a>
         </p>
     </footer>
-
 </body>
 </html>
  

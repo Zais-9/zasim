@@ -241,19 +241,8 @@
             <a href="6289172829" class="number" phone>6289172829</a>
         </p>
     </footer>
-</body>
-</html>
- 
-
-           
-           
-
-
-
 
 <script src="project.js"></script>
-
-    
 
 </body>
 </html>

@@ -910,10 +910,49 @@ h2{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:895px){
     #menu-icon{
         display:block;
-   /*     
+
+
+
+
+
+        
+  
     }
     .navbar{
         position:absolute;
@@ -973,7 +1012,40 @@ h2{
      }
      .about img{
          width:50vw;
-     }*/
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
      .services h2{
          margin-bottom: 3rem;
      } 
@@ -1004,4 +1076,5 @@ h2{
     .footer{
          padding:2rem 3%;
     }
+
 }

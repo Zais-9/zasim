@@ -225,6 +225,21 @@
                 <i class="bx bxl-instagram-alt"></i>
             </a>
         </div>
+
+
+ <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+
+
+
+
+        
              <nav class="navbar" class="list">
                 <ul class="list">
               <li><a href="#Home">FAQ</a></li>
@@ -242,5 +257,3 @@
 
 <script src="project.js"></script>
 
-</body>
-</html>

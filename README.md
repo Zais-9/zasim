@@ -52,9 +52,7 @@
         <a href="ReadMore.html" class="btn" id="btns">Read More</a>     
          <a href="pic3.jpg" class="btn"  id="btns" download>
                     <i class="fa-solid fa-download"></i>Dawnload CV</a>    
-        </section> 
-        <br><br>    
-<script src="project.js"></script>    
+       
     <section class="about" id="about"> 
          <div class="about-content">
                         <div class="home-image">
